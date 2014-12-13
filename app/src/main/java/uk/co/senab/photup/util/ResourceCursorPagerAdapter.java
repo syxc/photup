@@ -54,9 +54,9 @@ public abstract class ResourceCursorPagerAdapter extends CursorPagerAdapter {
     }
 
     /**
-     * Constructor with default behavior as per {@link CursorAdapter#CursorAdapter(Context, Cursor,
+     * Constructor with default behavior as per {@link CursorAdapter#CursorAdapter(android.content.Context, android.database.Cursor,
      * boolean)}; it is recommended you not use this, but instead {@link
-     * #ResourceCursorAdapter(Context, int, Cursor, int)}. When using this constructor, {@link
+     * #ResourceCursorAdapter(android.content.Context, int, android.database.Cursor, int)}. When using this constructor, {@link
      * #FLAG_REGISTER_CONTENT_OBSERVER} will always be set.
      *
      * @param context     The context where the ListView associated with this adapter is running
@@ -82,7 +82,7 @@ public abstract class ResourceCursorPagerAdapter extends CursorPagerAdapter {
      *                down views.
      * @param c       The cursor from which to get the data.
      * @param flags   Flags used to determine the behavior of the adapter, as per {@link
-     *                CursorAdapter#CursorAdapter(Context, Cursor, int)}.
+     *                CursorAdapter#CursorAdapter(android.content.Context, android.database.Cursor, int)}.
      */
     public ResourceCursorPagerAdapter(Context context, int layout, Cursor c, int flags) {
         super(context, c, flags);
@@ -94,7 +94,7 @@ public abstract class ResourceCursorPagerAdapter extends CursorPagerAdapter {
      * Inflates view(s) from the specified XML file.
      *
      * @see android.widget.CursorAdapter#newView(android.content.Context, android.database.Cursor,
-     *      ViewGroup)
+     *      android.view.ViewGroup)
      */
     @Override
     public View newView(Context context, Cursor cursor, ViewGroup parent) {

@@ -115,7 +115,7 @@ public abstract class CursorPagerAdapter extends PagerAdapter {
 
     /**
      * Constructor that allows control over auto-requery. It is recommended you not use this, but
-     * instead {@link #CursorAdapter(Context, Cursor, int)}. When using this constructor, {@link
+     * instead {@link #CursorAdapter(android.content.Context, android.database.Cursor, int)}. When using this constructor, {@link
      * #FLAG_REGISTER_CONTENT_OBSERVER} will always be set.
      *
      * @param c           The cursor from which to get the data.
@@ -198,7 +198,7 @@ public abstract class CursorPagerAdapter extends PagerAdapter {
     }
 
     /**
-     * @see android.widget.ListAdapter#getView(int, View, ViewGroup)
+     * @see android.widget.ListAdapter#getView(int, android.view.View, android.view.ViewGroup)
      */
 
     @Override
@@ -257,7 +257,7 @@ public abstract class CursorPagerAdapter extends PagerAdapter {
     }
 
     /**
-     * Swap in a new Cursor, returning the old Cursor. Unlike {@link #changeCursor(Cursor)}, the
+     * Swap in a new Cursor, returning the old Cursor. Unlike {@link #changeCursor(android.database.Cursor)}, the
      * returned old Cursor is <em>not</em> closed.
      *
      * @param newCursor The new cursor to be used.
@@ -311,10 +311,10 @@ public abstract class CursorPagerAdapter extends PagerAdapter {
     }
 
     /**
-     * Called when the {@link ContentObserver} on the cursor receives a change notification. The
+     * Called when the {@link android.database.ContentObserver} on the cursor receives a change notification. The
      * default implementation provides the auto-requery logic, but may be overridden by sub classes.
      *
-     * @see ContentObserver#onChange(boolean)
+     * @see android.database.ContentObserver#onChange(boolean)
      */
     @SuppressWarnings("deprecation")
     protected void onContentChanged() {

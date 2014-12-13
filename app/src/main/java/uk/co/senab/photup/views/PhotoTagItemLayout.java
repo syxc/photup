@@ -79,12 +79,12 @@ public class PhotoTagItemLayout extends FrameLayout
         mImageView = new MultiTouchImageView(context);
         mImageView.setOnMatrixChangeListener(this);
         mImageView.setPhotoTapListener(this);
-        addView(mImageView, FrameLayout.LayoutParams.MATCH_PARENT,
-                FrameLayout.LayoutParams.MATCH_PARENT);
+        addView(mImageView, LayoutParams.MATCH_PARENT,
+                LayoutParams.MATCH_PARENT);
 
         mTagLayout = new AbsoluteLayout(context);
-        addView(mTagLayout, FrameLayout.LayoutParams.MATCH_PARENT,
-                FrameLayout.LayoutParams.MATCH_PARENT);
+        addView(mTagLayout, LayoutParams.MATCH_PARENT,
+                LayoutParams.MATCH_PARENT);
 
         mPhotoTagInAnimation = AnimationUtils.loadAnimation(context, R.anim.tag_fade_in);
         mPhotoTagOutAnimation = AnimationUtils.loadAnimation(context, R.anim.tag_fade_out);
